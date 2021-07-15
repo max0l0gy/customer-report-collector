@@ -2,12 +2,12 @@
 
 ## Test
 ````
-./mvnw test
+./mvnw clean test
 ````
 
 ## Build
 ````
- ./mvnw package -DskipTests 
+ ./mvnw clean package -DskipTests 
 ````
 
 ## Docker

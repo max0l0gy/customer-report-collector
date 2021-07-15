@@ -6,9 +6,6 @@ spring:
   jackson:
     default-property-inclusion: non_null
 
-delay-in-millis:
-  options: [10, 30, 90, 200, 1000, 2000, 5000]
-
 logging:
   level:
     org.springframework: INFO
@@ -37,3 +34,8 @@ feign:
         connectTimeout: 10000
         readTimeout: 20000
         loggerLevel: basic
+
+external:
+  customer-report-calculation:
+    url: http://customer-report-calculation:8080
+    reports: /v1/reports/by/customer-id/{customerId}
