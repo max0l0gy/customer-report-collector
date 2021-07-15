@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/v1/reports/by/customer-id/101"
+      },
+      "response": {
+        "delayDistribution": {
+          "type": "lognormal",
+          "median": 90,
+          "sigma": 0.1
+        },
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "status": "success",
+          "currentTimestamp": 1626123390169,
+          "data": {
+            "customerId": 101,
+            "sale": 25,
+            "processTimeInMillis": 5000
+          }
+        }
+      }
+    }
+  ]
+}
