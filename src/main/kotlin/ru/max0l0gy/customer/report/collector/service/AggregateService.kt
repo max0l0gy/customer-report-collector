@@ -14,7 +14,8 @@ class AggregateService (
 
     fun aggregate(customerId: Long) : Mono<RestResponse<Report>> {
         return customerReportClient.reportBy(customerId)
-            .subscribeOn(Schedulers.boundedElastic())
+//            .subscribeOn(Schedulers.boundedElastic())
+            .subscribeOn(Schedulers.immediate())
     }
 
 }
