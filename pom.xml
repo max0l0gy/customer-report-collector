@@ -58,6 +58,11 @@
             <artifactId>feign-reactor-spring-configuration</artifactId>
             <version>${reactiveFeignVersion}</version>
         </dependency>
+        <dependency>
+            <groupId>com.playtika.reactivefeign</groupId>
+            <artifactId>feign-reactor-spring-configuration</artifactId>
+            <version>${reactiveFeignVersion}</version>
+        </dependency>
         <!-- TEST -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

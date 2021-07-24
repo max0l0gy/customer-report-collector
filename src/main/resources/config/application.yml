@@ -26,14 +26,17 @@ management:
       exposure:
         include: "*"
 
-#Open-feign client
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 30000
-        readTimeout: 30000
-        loggerLevel: basic
+#reactive-feign client
+reactive:
+  feign:
+    logger:
+      enabled: true
+    client:
+      config:
+        customer-report-calculation:
+          connectTimeout: 20000
+          readTimeout: 20000
+
 
 external:
   customer-report-calculation:
