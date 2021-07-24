@@ -17,7 +17,7 @@ class WebClientConfiguration ( @Value("\${external.customer-report-calculation.u
         val connector: ClientHttpConnector = ReactorClientHttpConnector(
             HttpClient.create()
                 .baseUrl(host)
-                .responseTimeout(Duration.ofSeconds(20))
+                .responseTimeout(Duration.ofSeconds(30))
         )
         return WebClient.builder().clientConnector(connector).build()
     }
