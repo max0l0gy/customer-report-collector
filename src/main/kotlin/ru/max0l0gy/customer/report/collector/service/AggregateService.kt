@@ -5,7 +5,7 @@ import reactor.core.publisher.Mono
 import reactor.core.scheduler.Schedulers
 import ru.max0l0gy.customer.report.collector.domain.Report
 import ru.max0l0gy.customer.report.collector.domain.RestResponse
-import ru.max0l0gy.customer.report.collector.feign.CustomerReportClient
+import ru.max0l0gy.customer.report.collector.webclient.CustomerReportClient
 
 @Service
 class AggregateService (

@@ -1,4 +1,4 @@
-package ru.max0l0gy.customer.report.collector.feign
+package ru.max0l0gy.customer.report.collector.webclient
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.core.ParameterizedTypeReference
@@ -19,17 +19,13 @@ class CustomerReportClientWebClient(
 
     override fun reportBy(customerId: Long): Mono<RestResponse<Report>> {
         val typeRef: ParameterizedTypeReference<RestResponse<Report>> = object : ParameterizedTypeReference<RestResponse<Report>>() {}
-        val urlWithParams : String = url.replace("{customerId}", customerId.toString())
-        
         return webClient
             .get()
-            .uri(urlWithParams)
-            .attribute("customerId", customerId)
+            .uri(this.url, mapOf("customerId" to customerId))
             .accept(APPLICATION_JSON)
             .retrieve()
             .bodyToMono(typeRef)
     }
-
 
 }
 

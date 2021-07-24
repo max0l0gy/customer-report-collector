@@ -1,4 +1,4 @@
-package ru.max0l0gy.customer.report.collector.feign
+package ru.max0l0gy.customer.report.collector.webclient
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

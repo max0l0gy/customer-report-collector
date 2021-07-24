@@ -1,4 +1,4 @@
-package ru.max0l0gy.customer.report.collector.feign
+package ru.max0l0gy.customer.report.collector.webclient
 
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
