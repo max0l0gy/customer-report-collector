@@ -6,11 +6,12 @@ import reactivefeign.spring.config.EnableReactiveFeignClients
 
 @SpringBootApplication
 @EnableReactiveFeignClients
-class CustomerReportCollectorApplication {
-    fun main(args: Array<String>) {
-        runApplication<CustomerReportCollectorApplication>(*args)
-    }
+class CustomerReportCollectorApplication
+
+fun main(args: Array<String>) {
+    runApplication<CustomerReportCollectorApplication>(*args)
 }
+
 
 
 
