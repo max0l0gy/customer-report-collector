@@ -34,8 +34,10 @@ reactive:
     client:
       config:
         customer-report-calculation:
-          connectTimeout: 20000
-          readTimeout: 20000
+          options:
+            connectTimeoutMillis: 33000
+            readTimeoutMillis: 33000
+            writeTimeoutMillis: 33000
 
 
 external:
